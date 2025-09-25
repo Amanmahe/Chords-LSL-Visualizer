@@ -1,7 +1,7 @@
 use lsl::{resolve_streams, Pullable, StreamInlet};
 use std::sync::atomic::{AtomicBool, Ordering};
 use std::thread;
-use std::{env, sync::Arc, time::Instant};
+use std::{env, sync::Arc};
 use tauri::{AppHandle, Emitter, Manager};
 use tokio::sync::{mpsc, Mutex};
 
