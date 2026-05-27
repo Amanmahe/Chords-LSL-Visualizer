@@ -78,8 +78,8 @@ jobs:
                   
       - name: Install Dependencies
         run: |
-          npm install
-          npm install tailwindcss-animate
+          npm install --legacy-peer-deps
+          npm install tailwindcss-animate --legacy-peer-deps
 
       - name: Install GTK and Build Tools (Ubuntu only)
         if: runner.os == 'Linux'
