@@ -88,7 +88,7 @@ jobs:
           sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf libudev-dev build-essential pkg-config
           
       - name: Install Tauri CLI (locally)
-        run: npm install @tauri-apps/cli
+        run: npm install @tauri-apps/cli --legacy-peer-deps
 
       - name: Clean npm cache
         run: npm cache clean --force
